@@ -1,0 +1,30 @@
+{
+  "name": "auto-poc-private",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bguillen-tcs/auto-poc-private.git"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist",
+    "build-components": "cd packages/components/ && npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@bguillen-tcs"
+  },
+  "keywords": [],
+  "author": "Bryan Guillen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bguillen-tcs/auto-poc-private/issues"
+  },
+  "homepage": "https://github.com/bguillen-tcs/auto-poc-private",
+  "auto": {
+    "plugins": [
+      "npm"
+    ],
+    "onlyPublishWithReleaseLabel": true
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
